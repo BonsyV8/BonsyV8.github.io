@@ -6,24 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module2-solution</title>
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /*-- Media query cods---*/
+/* query for larg divices 992px and above */
+@media (min-width:992px)
+{
+
+    .collon-1, .collon-2, .collon-3{
+        float: left;
+        width: 33.33%;
+        height: 200px;
+        padding: 5px;
+        border: 5px solid black; 
+    }
+
+    #chicken{
+        width: 100%;  
+    }
+
+    #meat{
+        width: 100%; 
+    }
+
+    #sushi {
+        width: 100%;
+    }
+    
+}
+/* query for divices between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px){
+    .collon-1, .collon-2 {
+        float: left;
+        width: 50%;
+        height: 200px;
+        padding: 5px;
+        border: 5px solid black;
+        margin:auto;
+        margin-bottom: 2%;
+    }
+
+    .collon-3{
+        float: left;
+        width: 100%;
+        height: 200px;
+        padding: 5px;
+        top: 20px;
+        border: 5px solid black; 
+    }
+    #chicken{
+        width: 100%;
+    }
+    #meat{
+        width: 100%;
+    }
+    #sushi{
+        width: 100%;
+    }
+} 
+/* query for divices = 767px and less */   
+@media (max-width: 767px)
+{
+    .collon-1, .collon-2, .collon-3{
+        width: 100%;
+        height: 200px;
+        border: 5px solid black;
+        margin-bottom: 5%;
+        padding: 5px;
+    }
+    #chicken{
+        width: 100%;
+    }
+    #meat{
+        width: 100%;
+    }
+    #sushi{
+        width: 100%;
+    }
+
+}
+
+/*--***** MEdia query cods ***/
+    </style>
+
 </head>
 <body>
-    <h1>OUR MENU</h1>
-    
-    <div class="container">
-        <p class="chicken">
-            
-        </p>
+    <div id="container">
+        <h1>OUR MENU</h1>
 
-        <p class="beef"> 
+        <div class="collon-1">
+            <p><strong>Chicken</strong></p>
+
+            <div id="chicken"> 
+                <p>Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease.
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening in 
+                    China with Kentucky Fried Chicken.
+                </p>
+            </div>
+        </div>
+
+        <div class="collon-2">
+            <p><strong>Beef</strong></p>
+
+            <div id="meat">
+                <p>
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature
+                    beef has hard white bones
+                </p>
+            </div>
+        </div>
             
-        </p>
-        
-       <p class="sushi">
-            
-        </p>
+        <div class="collon-3">
+            <p><strong>Sushi</strong></p>
+
+            <div id="sushi">
+                <p>Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and
+                    elsewhere (see also sashimi).
+                </p>
+            </div>
+        </div>
         
     </div>
-    
+
+        
 </body>
 </html>
