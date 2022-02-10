@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module2-solution</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /*-- Media query cods---*/
+/* query for larg divices 992px and above */
+@media (min-width:992px)
+{
+    .collon-1, .collon-2, .collon-3{
+        width: 31.33%;
+        height: 200px;
+    }
+
+}
+/* query for divices between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .collon-1, .collon-2 {
+        width: 48%;
+        height: 200px;
+        border: 5px solid black;
+        padding: 10px;
+        
+    }
+
+    .collon-3{
+        float: left;
+        width: 98%;
+        height: 200px;
+        padding: 10px;
+        border: 5px solid black; 
+    }
+    
+} 
+/* query for divices = 767px and less */   
+@media (max-width: 767px)
+{
+    .collon-1, .collon-2, .collon-3{
+        height: 200px;
+        width: 98%;
+        border: 5px solid black;
+        margin-bottom: 5%;
+    }
+}
+
+/*--***** MEdia query cods ***/
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>OUR MENU</h1>
+        <div class="collon-1">
+            <p><strong>Chicken</strong></p>
+            <p id="chicken">
+                Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease.
+                With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for
+                the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                belief that chicken tikka masala is the national dish, and the same thing is happening in 
+                China with Kentucky Fried Chicken.
+                <br>Rapid growth of the world population particularly after the ‘50s has exceeded 7.5 billion 
+                in 2019. The biggest problem that comes along with this growth is food and nutrition problems. 
+                Chicken plays a significant role in the solution to these problems. Annual worldwide chicken meat 
+                production reached 110 million tonnes. Chicken is estimated to be the most produced types of meat 
+                after 2020.
+            </p>
+        </div>
+
+        <div class="collon-2">
+            <p><strong>Beef</strong></p>
+            <p id="meat">
+                Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and
+                well distributed. In young beef the bones are soft, porous, and red; the less desirable mature
+                beef has hard white bones
+            </p>
+        </div>
+            
+        <div class="collon-3">
+            <p><strong>Sushi</strong></p>
+            <p id="sushi">
+                Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                discriminating clientele, and the dish has gained popularity in the United States and
+                elsewhere (see also sashimi).
+            </p>
+        </div>
+        
+    </div>
+
+        
+</body>
+</html>
