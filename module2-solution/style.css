@@ -48,5 +48,14 @@ h1 {
     float: right;
     text-align: center;
     border: 3px solid black;
-    background-color:rgb(170, 71, 71);
+ }
+
+ #gold > strong {
+     background-color:gold;
+ }
+ #brown > strong {
+     background-color: brown;
+ }
+ #yellow > strong {
+     background-color: yellowgreen;
  }
