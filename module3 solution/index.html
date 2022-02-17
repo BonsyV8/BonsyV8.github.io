@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Module3 Solution</title>
+</head>
+<style>
+    /*-- Media query cods---*/
+/* query for larg divices 992px and above */
+@media (min-width:992px)
+{
+    .col-md-4, .col-sm-12, .col-xs-12{
+        width: 31.3333%;
+        height: 700px;
+        overflow: auto;
+}
+
+}
+/* query for divices between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px)
+{
+   
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, 
+    .col-sm-8, .col-sm-9, .col-sm-10,  .col-sm-11, .col-sm-12 {
+       float: left;
+       }
+       .col-sm-6{
+        width: 48%;
+        height: 400px;
+        overflow: auto;
+       }
+       
+       .col-sm-12{
+           float:left;
+           width: 100%;
+   }  
+}
+
+ 
+/* query for divices = 767px and less */   
+@media (max-width: 767px)
+{
+    .food{
+        margin-top: 5px;
+    }
+
+    .row{
+        padding: 90px;
+        padding-top: 10px;
+    }
+    .col-md-4, .col-sm-12, .col-xs-12 {
+        margin-bottom: 10%;
+      
+    }
+    #collapsable-nav a{
+        font-size: x-large;
+    }
+}
+
+/*--***** MEdia query cods ***/
+</style>
+
+<body>
+    <header>
+        
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <h1 class="food"> Food, LLC</h1>
+                    </div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <!--<span class="glyphicon glyphicon-info-sign"></span>(No glyphicon for the Iten. Optional)-->
+                                <br class="hidden-xs"> Chicken 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!--<span class="glyphicon glyphicon-info-sign"></span>(No glyphicon for the Iten. Optional)-->
+                                <br class="hidden-xs"> Beef
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!--<span class="glyphicon glyphicon-info-sign"></span>(No glyphicon for the Iten. Optional)-->
+                                <br class="hidden-xs"> Sushi
+                            </a>
+                        </li>  
+                    </ul>
+                </div>
+            </div>  
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <h1 id="top">Our Menu</h1>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h2 id="chiken"> Chicken</h2>
+                <p> Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease.
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken. <br>
+                    Rapid growth of the world population particularly after the 50s has exceeded 7.5 billion in 2019.
+                    The biggest problem that comes along with this growth is food and nutrition problems. Chickenplays
+                    a significant role in the solution to these problems. Annual worldwide chicken meat production 
+                    reached 110 million tonnes. Chicken is estimated to be the most produced types of meat after 2020.
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+
+
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi). <br>
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+        
+        
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+        
+        
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi).
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+        
+        
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+        
+        
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi). <br>
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease.
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken. <br>
+                    Rapid growth of the world population particularly after the 50s has exceeded 7.5 billion in 2019.
+                    The biggest problem that comes along with this growth is food and nutrition problems. Chickenplays
+                    a significant role in the solution to these problems. Annual worldwide chicken meat production 
+                    reached 110 million tonnes. Chicken is estimated to be the most produced types of meat after 2020.
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+
+
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi). <br>
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+        
+        
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+        
+        
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi).
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+        
+        
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+        
+        
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi). <br>
+                    <Strong> <a href="#"> Back to top</a></Strong>
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h2 id="meat"> Beef</h2>
+                <p> Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety,
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature
+                    beef has hard white bones <br>
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease.
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken. <br>
+                    Rapid growth of the world population particularly after the 50s has exceeded 7.5 billion in 2019.
+                    The biggest problem that comes along with this growth is food and nutrition problems. Chickenplays
+                    a significant role in the solution to these problems. Annual worldwide chicken meat production 
+                    reached 110 million tonnes. Chicken is estimated to be the most produced types of meat after 2020.
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+
+
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi). <br>
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+        
+        
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+        
+        
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi).
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+        
+        
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+        
+        
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi). <br>
+                    <Strong> <a href="#"> Back to top</a></Strong>
+
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h2 id="sushi">Sushi</h2>
+                <p> Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi). <br>
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease.
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken. <br>
+                    Rapid growth of the world population particularly after the 50s has exceeded 7.5 billion in 2019.
+                    The biggest problem that comes along with this growth is food and nutrition problems. Chickenplays
+                    a significant role in the solution to these problems. Annual worldwide chicken meat production 
+                    reached 110 million tonnes. Chicken is estimated to be the most produced types of meat after 2020.
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+
+
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi). <br>
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+        
+        
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+        
+        
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi).
+                    Chicken is the ubiquitous food of our era, crossing multiple cultural boundaries with ease. 
+                    With its mild taste and uniform texture, chicken presents an intriguingly blank canvas for 
+                    the flavor palette of almost any cuisine. A generation of Britons is coming of age in the 
+                    belief that chicken tikka masala is the national dish, and the same thing is happening 
+                    China with Kentucky Fried Chicken.
+        
+        
+                    Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef 
+                    is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, 
+                    fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and 
+                    well distributed. In young beef the bones are soft, porous, and red; the less desirable mature 
+                    beef has hard white bones
+        
+        
+                    Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with 
+                    vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. 
+                    Restaurants specializing in sushi abound in Japan, where subtleties of preparation find a 
+                    discriminating clientele, and the dish has gained popularity in the United States and 
+                    elsewhere (see also sashimi). <br>
+                    <Strong> <a href="#"> Back to top</a></Strong>
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
