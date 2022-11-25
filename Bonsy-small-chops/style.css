@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.parallax, .parallaxl{
+    background-image: url('BG Image2.jpg');
+    /*background-color: #771504;*/
+    height: max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pageTitle{
+    background:rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 70px;
+    font-family: fantasy;
+    letter-spacing: 20px;
+
+}
+.sticky{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.menu{
+    text-align: center;
+    background: #c24311;
+}
+.menuList{
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+.menuList li{
+    font-size: 15px;
+    font-style: none;
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+}
+.aMenu, .aLinks{
+    text-decoration: none;
+    color: white;
+}
+.menuList li:hover{
+    transform: scale(1.1);
+    background: #771504;
+}
+.header{
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #c24311;
+    color: white;
+    width: max-content; 
+    padding: 10px;
+}
+.searchBox{
+    border: 1px solid white;
+    border-radius: 30px;
+    background: white;
+    width: max-content;
+    display: inline-block;
+    margin: 15px;
+}
+.searchBox:hover{
+    box-shadow: 0 0 5px 1px #eed5cb;
+    border: 1px #eed5cb;
+}
+
+.serachInput{
+    width: 200px;
+    border: none;
+    font-size: 12px;
+    outline: none;
+    background: transparent;
+    margin: 10px 0 3px 10px;
+}
+
+i{
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.container, .dealsContainer{
+    margin: 50px 50px 50px 5%;
+    text-align: center;
+    width: 90%;
+}
+
+.catigories, .items{
+    width: max-content;
+    margin: 25px;
+    border: 2px #c24311;
+    display: inline-block;
+    border-radius: 15px 15px 15px 15px;
+}
+.catigories:hover, .items:hover{
+    box-shadow:0 0 5px 1px #771504;
+    transition-delay: 200ms;
+    transform: scale(1.05);
+}
+.itemImage{
+    height: 200px;
+    width: 150px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 0px;
+}
+.itemTitle{
+    color:#771504;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+.itemPrice a{
+    text-align: center;
+    font-weight: bold;
+    color:#771504;
+    margin-bottom: 5px;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    padding: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color:white;
+    background-color:transparent;
+}
+
+.deals{
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+    max-width: 20%;
+    background: linear-gradient(120deg, #771504 20%, #c24311 50%, #c24551 80%);
+}
+.couponBtn{
+    border: 1px solid white;
+    color:white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.couponBtn:hover{
+    box-shadow: 0 0 5px 3px #faceb8  inset;
+}
+
+.image{
+    display: inline-block;
+    /*border: 1px solid #c24311;
+    border-radius: 15px 15px 15px 15px;*/
+}
+
+.itemImageSize{
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+.itemSelect{
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+.buyBtn{
+    border: 1px solid black;
+    background-color: orange;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+.buyBtn a{
+    font-size: 20px;
+    color: #771504;
+    margin:20px;
+}
+
+.discription{
+   margin: 20px;
+   min-height: 100px; 
+}
+
+.parallaxl{
+    background-image: url(BG\ Image.jpg);
+}
+
+footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    
+}
+footer .move-up span{
+    color: #771504;
+   
+}
+
+footer .move-up span:hover{
+    color: #771504;
+    cursor: pointer;
+}
+.footer{
+    background:rgb(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+}
+.quikLinks{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 30%;
+}
+
+.quikLinks ul{
+    padding: 0;
+}
+
+.quikLinks li{
+    list-style: none;
+    padding: 10px;
+    font-weight: 300px;
+}
+
+.aLinks:hover{
+    color: #771504;
+}
+.copyRight{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 15px;
+}
